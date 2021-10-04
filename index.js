@@ -1,4 +1,4 @@
-var server = require('./config/server')
+var server =require('./config/server')
 var app = server.app
 var porta = server.porta
 
