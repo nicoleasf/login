@@ -17,6 +17,9 @@
         placeholder="Digite sua senha" required><br>
         <input type="submit" value="Salvar">
     </form>
+    <% if(typeof(mensagem)!= 'undefined') {%>
+    <h4><%=mensagem%></h4>
+    <% } %>
     <a href="/login">Já possui registro?</a>
 </body>
 </html>
