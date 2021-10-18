@@ -1,6 +1,6 @@
 module.exports = (app)=>{
     //importar bcrypt
-    var bcrypt = require('bcrypt')
+    var bcrypt = require('bcryptjs')
 
     app.get('/registro',(req,res)=>{
         res.render('registro.ejs')
@@ -22,7 +22,7 @@ module.exports = (app)=>{
                 email:req.body.email,
                 senha:senhasegura
             }).save()
-            res.render('login.ejs')
+            res.redirect('/login')
         }
     })
 }
