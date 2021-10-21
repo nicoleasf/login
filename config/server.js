@@ -3,6 +3,6 @@ var app = express()
 
 app.use(express.urlencoded({extended:false}))
 
-var porta = process.env.PORT ||2222
+var porta = process.env.PORT || 2222
 
 module. exports = {app,porta}
