@@ -5,4 +5,4 @@ app.use(express.urlencoded({extended:false}))
 
 var porta = process.env.PORT || 2222
 
-module. exports = {app,porta}
+module.exports = {app,porta}
