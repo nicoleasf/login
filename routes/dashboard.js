@@ -8,7 +8,7 @@ module.exports= (app)=>{
         if(!id){
             res.redirect('/login')
         }else{
-            var userexiste = await usuarios .findOne({_id:id})
+            var userexiste = await usuarios.findOne({_id:id})
             if(userexiste){
                  res.render('dashboard.ejs', {login:userexiste})
             }else{
