@@ -14,7 +14,8 @@ module.exports = (app)=>{
             var bcrypt = require('bcryptjs')
             var verificar = await bcrypt.compare(req.body.senha, userexiste.senha)
             if(verificar){
-                res.send('usuário e senha correta')
+                //res.send('usuário e senha correta')
+                res.redirect('/dashboard?id='+userexiste._id)
             }else{
                 res.render('login.ejs',{mensagem:'senha não confere'})
             }
