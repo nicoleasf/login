@@ -12,7 +12,7 @@ module.exports= (app)=>{
             if(userexiste){
                  res.render('dashboard.ejs', {login:userexiste})
             }else{
-                res.redirect("/login)
+                res.redirect("/login")
                              
                 
       )      
