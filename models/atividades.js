@@ -1,11 +1,12 @@
 var mongoose = require('mongoose')
 
 var modelo = new mongoose.Schema({
-    data:Data,
+    data:Date,
     tipo:String,
     entrega:String,
     disciplina:String,
-    instrucoes:String
+    instrucoes:String,
+    user:String
 })
 
 module.exports = mongoose.model('atividades',modelo)

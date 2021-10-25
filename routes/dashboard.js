@@ -32,7 +32,7 @@ module.exports= (app)=>{
             instrucoes: dados.instrucoes,
             user: dados.id
          }).save()
-        .the,((result)=>{
+        .the((result)=>{
             res.redirect('/dashboard?id= '+dados.id)
         })
     })
